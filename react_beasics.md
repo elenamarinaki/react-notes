@@ -14,6 +14,12 @@ To add auto-complete in React:
   }
   ```
 
+### Create React App 🍰
+
+`npx create-react-app [app_name]`
+`cd [app_name]`
+`npm start`
+
 ### Class Components
 
 - We can write functions that return HTML, but we can also write **Classes** that return HTML.
