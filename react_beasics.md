@@ -1,5 +1,19 @@
 # React Basics ⚛️
 
+## ⚠️
+
+To add auto-complete in React:
+
+- `Command + Shift + P`
+- Preferences: Configure language specific settings => JavaScript => opens `settings.json`
+- Added:
+  ```js
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+  "javascript": "javascriptreact"
+  }
+  ```
+
 ### Class Components
 
 - We can write functions that return HTML, but we can also write **Classes** that return HTML.
