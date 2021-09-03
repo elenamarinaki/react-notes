@@ -38,3 +38,14 @@ class App extends Component {
 
 - The `return ();` that was going inside the _function App_, now goes into a class. This way we can make use of special functionalities of the classes, like the `render()` method.
 - The `render()` method returns HTML.
+
+### JSX Attributes 🦩
+
+- `className` instead of `class`, because `class` means something else in JavaScript.
+- `{}` is a JS expression, a variable, something that produces a value, eg. `src={}`, `<p>{4 + 5}</p>`
+- `onClick` instead of `onclick`
+
+### Uni-directional Flow 🌊
+
+- We are not allowed to modify state in React without calling the `setState()` method.
+- When we set the state to something different, the `render()` method gets called again, so we can re-render the component in the new state.
