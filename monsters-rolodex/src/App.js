@@ -22,21 +22,25 @@ import './App.css';
 // }
 // instead of making App a function, we turn it into a component
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      string: 'hello Elena!',
+    };
+  }
   render() {
     return (
       <div className='App'>
         <header className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
           <p>Hello, my name is Elena! You?</p>
-          <a
-            className='App-link'
-            href='https://reactjs.org'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Learn React
-          </a>
-          <div>This is a `div`</div>
+          <p>{this.state.string}</p>
+
+          {/* using the setState() method from the Component class */}
+          <button onClick={() => this.setState({ string: 'Hello Marika!!' })}>
+            Change text
+          </button>
         </header>
       </div>
     );
