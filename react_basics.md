@@ -91,3 +91,46 @@ class App extends React.Component {
 
 - they get called at different stages automatically by React, based on when the component is getting rendered.
 - **componentDidMount**: The `componentDidMount()` method allows us to execute the React code _when the component is already placed in the DOM_ (Document Object Model). This method is called during the Mounting phase of the React Life-cycle i.e after the component is rendered.
+
+### Props 🧱
+
+- any parameters that we pass inside a created component
+- is going to be an `object` of ANY properties I pass onto my component in use
+
+In `card-list.component.jsx` :
+
+```js
+import React from 'react';
+
+export const CardList = (props) => {
+  console.log(props);
+  return <div>Hello</div>;
+};
+```
+
+...and inside `App.js`
+
+```js
+<CardList name='Elena' />
+```
+
+_becomes..._
+
+```js
+{
+  name: 'Elena';
+}
+```
+
+✨
+
+- The props have children!
+  If in `App.js` we pass:
+
+  ```js
+  <CardList name='Elena'>Elena2</CardList>
+  ```
+
+  ... the `Elena2` is a **prop child**! Or anything in between these tags!!
+
+  <img src='https://media.giphy.com/media/tlGD7PDy1w8fK/giphy.gif?cid=ecf05e47x6mnhe54acc05ki3xh5e8l8jzrm4ns10g20inqia&rid=giphy.gif&ct=g' width=200>
