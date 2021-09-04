@@ -85,3 +85,8 @@ class App extends React.Component {
 - instead of requesting a page, we are just requesting for **data**, which is being rendered in the page we already are.
 - we get the ability to communicate with outside servers, with servers we don't control.
 - the API provides us a way to access info from a server
+
+### Lifecycle Methods :cyclone:
+
+- they get called at different stages automatically by React, based on when the component is getting rendered.
+- **componentDidMount**: The `componentDidMount()` method allows us to execute the React code _when the component is already placed in the DOM_ (Document Object Model). This method is called during the Mounting phase of the React Life-cycle i.e after the component is rendered.
