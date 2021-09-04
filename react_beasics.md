@@ -55,3 +55,7 @@ class App extends Component {
 
 - We are not allowed to modify state in React without calling the `setState()` method.
 - When we set the state to something different, the `render()` method gets called again, so we can re-render the component in the new state.
+
+### Map() + _key_ attribute 🗺️ 🔑
+
+- Anytime you use the `map()` function inside of _render_, or you have a list of the **same jsx elements** one after another, **they need a key attribute** (and CRA will warn you about it if you miss it)
