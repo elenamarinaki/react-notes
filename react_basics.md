@@ -79,3 +79,9 @@ class App extends React.Component {
 ### Map() + _key_ attribute 🗺️ 🔑
 
 - Anytime you use the `map()` function inside of _render_, or you have a list of the **same jsx elements** one after another, **they need a key attribute** (and CRA will warn you about it if you miss it)
+
+### SPA: Single Page Application 📄
+
+- instead of requesting a page, we are just requesting for **data**, which is being rendered in the page we already are.
+- we get the ability to communicate with outside servers, with servers we don't control.
+- the API provides us a way to access info from a server
