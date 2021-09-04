@@ -127,10 +127,21 @@ _becomes..._
 - The props have children!
   If in `App.js` we pass:
 
-  ```js
-  <CardList name='Elena'>Elena2</CardList>
-  ```
+```js
+<CardList name='Elena'>Elena2</CardList>
+```
 
-  ... the `Elena2` is a **prop child**! Or anything in between these tags!!
+... the `Elena2` is a **prop child**! Or anything in between these tags!!
+
+In `card-list.component.jsx`:
+
+```js
+import React from 'react';
+
+export const CardList = (props) => {
+  console.log(props);
+  return <div>{props.children}</div>;
+};
+```
 
   <img src='https://media.giphy.com/media/tlGD7PDy1w8fK/giphy.gif?cid=ecf05e47x6mnhe54acc05ki3xh5e8l8jzrm4ns10g20inqia&rid=giphy.gif&ct=g' width=200>
