@@ -42,8 +42,28 @@ class App extends Component {
 }
 ```
 
+↪️ another way to do it ...
+
+```js
+import React from 'react';
+```
+
+and instead we add it after the `extends` keyword
+
+```js
+class App extends React.Component {
+    render() {
+        return (
+
+        );
+    }
+}
+```
+
 - The `return ();` that was going inside the _function App_, now goes into a class. This way we can make use of special functionalities of the classes, like the `render()` method.
 - The `render()` method returns HTML.
+- `super()` helps us by calling `React.Component`'s `constructor()`🚗
+- the **components** have some **built-in methods**
 
 ### JSX Attributes 🦩
 
