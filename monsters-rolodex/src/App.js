@@ -26,22 +26,28 @@ class App extends Component {
     super();
 
     this.state = {
-      string: 'hello Elena!',
+      monsters: [
+        {
+          name: 'Frankie',
+          id: 'num1',
+        },
+        {
+          name: 'Dracula',
+          id: 'num2',
+        },
+        {
+          name: 'Zombie',
+          id: 'num3',
+        },
+      ],
     };
   }
   render() {
     return (
       <div className='App'>
-        <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <p>Hello, my name is Elena! You?</p>
-          <p>{this.state.string}</p>
-
-          {/* using the setState() method from the Component class */}
-          <button onClick={() => this.setState({ string: 'Hello Marika!!' })}>
-            Change text
-          </button>
-        </header>
+        {this.state.monsters.map((monster) => (
+          <h1 key={monster.id}>{monster.name}</h1>
+        ))}
       </div>
     );
   }
