@@ -70,6 +70,7 @@ class App extends React.Component {
 - `className` instead of `class`, because `class` means something else in JavaScript.
 - `{}` is a JS expression, a variable, something that produces a value, eg. `src={}`, `<p>{4 + 5}</p>`
 - `onClick` instead of `onclick`
+- `Babel` will convert JSX to regular JS
 
 ### Uni-directional Flow 🌊
 
