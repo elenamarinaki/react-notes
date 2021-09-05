@@ -145,3 +145,9 @@ export const CardList = (props) => {
 ```
 
   <img src='https://media.giphy.com/media/tlGD7PDy1w8fK/giphy.gif?cid=ecf05e47x6mnhe54acc05ki3xh5e8l8jzrm4ns10g20inqia&rid=giphy.gif&ct=g' width=200>
+
+### The job of a React Developer 🤔
+
+- Decide on **Components**
+- Decide the **State** and _where it lives_
+- _What_ changes _when_ state changes?
