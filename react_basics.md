@@ -151,3 +151,5 @@ export const CardList = (props) => {
 - Decide on **Components**
 - Decide the **State** and _where it lives_
 - _What_ changes _when_ state changes?
+
+Benefits => more flexibility, re-usable components, easier testing! ✨
