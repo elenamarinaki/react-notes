@@ -164,4 +164,8 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
 
 #### 🍬 The `onChange` event in React detects when the value of an input element changes.
 
-#### 🧁 The `setState` is an asynchronous function.
+#### 🧁 The `setState` is an _asynchronous_ function.
+
+#### 🍧 Events in React universe => _Synthetic_ events: detect when DOM events happen.
+
+#### ⚠️ We cannot use `setState` inside `render()`, it will create a loop.
