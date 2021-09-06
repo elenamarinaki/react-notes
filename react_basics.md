@@ -162,4 +162,6 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
 - The key attribute helps React distinguish multiple components of the same kind. This way, updating the DOM is so efficient.
 - _State can be anywhere_, not only in the App.js component.
 
-#### ❗ The onChange event in React detects when the value of an input element changes.
+#### 🍬 The `onChange` event in React detects when the value of an input element changes.
+
+#### 🧁 The `setState` is an asynchronous function.
