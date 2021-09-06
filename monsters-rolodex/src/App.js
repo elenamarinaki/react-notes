@@ -27,6 +27,7 @@ class App extends Component {
 
     this.state = {
       monsters: [],
+      searchField: '',
     };
   }
 
@@ -39,6 +40,11 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+        <input
+          type='search'
+          placeholder='search monsters'
+          onChange={(e) => console.log(e.target)}
+        />
         <CardList monsters={this.state.monsters} />
         {/* we're going to move this section inside the card-list component, since it's the component's responsibility to generate the list elements...
           So, to do that, we have to pass the 'monsters' as props in the CardList element, so they can be accessed by the component */}
