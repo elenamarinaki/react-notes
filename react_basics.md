@@ -153,3 +153,11 @@ export const CardList = (props) => {
 - _What_ changes _when_ state changes?
 
 Benefits => more flexibility, re-usable components, easier testing! ✨
+
+### State VS Props 🪑
+
+- A **state** is passed down to a component as an **_attribute_** (just like HTML).
+- As soon as we pass a state as component, the component receives this state as a **prop**.
+- State changes because of user interaction.
+- The key attribute helps React distinguish multiple components of the same kind. This way, updating the DOM is so efficient.
+- _State can be anywhere_, not only in the App.js component.
