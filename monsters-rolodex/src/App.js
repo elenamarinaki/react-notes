@@ -38,6 +38,10 @@ class App extends Component {
   }
 
   render() {
+    const { monsters, searchField } = this.state;
+    const filteredMonsters = monsters.filter((monster) =>
+      monster.name.toLowerCase().includes(searchField.toLowerCase())
+    );
     return (
       <div className='App'>
         <input
@@ -45,7 +49,7 @@ class App extends Component {
           placeholder='search monsters'
           onChange={(e) => this.setState({ searchField: e.target.value })}
         />
-        <CardList monsters={this.state.monsters} />
+        <CardList monsters={filteredMonsters} />
         {/* we're going to move this section inside the card-list component, since it's the component's responsibility to generate the list elements...
           So, to do that, we have to pass the 'monsters' as props in the CardList element, so they can be accessed by the component */}
         {/* {this.state.monsters.map((monster) => (
