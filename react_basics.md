@@ -169,3 +169,11 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
 #### 🍧 Events in React universe => _Synthetic_ events: detect when DOM events happen.
 
 #### ⚠️ We cannot use `setState` inside `render()`, it will create a loop.
+
+### Functional VS Class Components 🧃
+
+- Example: search box 🔍
+- Functional components, unlike class components, do **NOT** have access to **state**, because they do not have access to constructor.
+- Functional components do **NOT** have access to **life cycle methods**.
+- The functional component just **GETS** some **props** and **RETURNS** some **HTML**.
+- Easier to read 📖 and to test 🧪.
