@@ -187,3 +187,10 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
   this.handleChange = this.handleChange.bind(this);
   ```
   Is a **method** on any _function_ that returns a **new** _function_, where the context of `this.` is set to whatever we passed to it.
+- Overcoming this verbose way by using **_arrow functions_**:
+  ```js
+  handleChange = (e) => {
+    this.setState({ searchField: e.target.value });
+  };
+  ```
+  ⚠️ `This.` is bind to where the arrow function was defined in the first place! (_lexical scoping_)
