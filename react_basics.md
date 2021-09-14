@@ -177,3 +177,13 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
 - Functional components do **NOT** have access to **life cycle methods**.
 - The functional component just **GETS** some **props** and **RETURNS** some **HTML**.
 - Easier to read 📖 and to test 🧪.
+
+### Context of `this.` 👈
+
+- The first thing that runs in an App is the _constructor_.
+- If we want to control the context of `this`, we have to define it in the constructor itself.
+- Using method `.bind()`:
+  ```js
+  this.handleChange = this.handleChange.bind(this);
+  ```
+  Is a **method** on any _function_ that returns a **new** _function_, where the context of `this.` is set to whatever we passed to it.
