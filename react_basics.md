@@ -205,3 +205,4 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
   ```js
   import React from 'react';
   ```
+- `ReactDOM` helps us these HTML elements, using **functions** or **classes**.

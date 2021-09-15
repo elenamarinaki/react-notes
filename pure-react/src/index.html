@@ -11,12 +11,19 @@
     <script src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
     <script>
+      const Person = () => {
+        return React.createElement('div', {}, [
+          React.createElement('h1', {}, 'Elena'),
+          React.createElement('p', {}, 'Developer'),
+        ]);
+      };
+
       const App = () => {
-        return React.createElement(
-          'div',
-          {},
-          React.createElement('h1', {}, 'REACT IS RENDERED!!!')
-        );
+        return React.createElement('div', {}, [
+          React.createElement('h1', {}, 'REACT IS RENDERED!!!'),
+          React.createElement(Person),
+          React.createElement(Person),
+        ]);
       };
       ReactDOM.render(
         React.createElement(App),
