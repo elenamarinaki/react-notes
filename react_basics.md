@@ -194,3 +194,14 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
   };
   ```
   ⚠️ `This.` is bind to where the arrow function was defined in the first place! (_lexical scoping_)
+
+### React Native & React DOM 🥫
+
+- Both have the _same react engine_.
+- They use _different packages_ though.
+- In developer tools, we can type `React` and `ReactDOM`, which gives us access to the new created objects offered by the added packages:
+  <img src='images/screen_1.png' width=350>
+- The above is equal to:
+  ```js
+  import React from 'react';
+  ```
