@@ -206,3 +206,7 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
   import React from 'react';
   ```
 - `ReactDOM` helps us these HTML elements, using **functions** or **classes**.
+
+### `yarn.lock` or `npm.lock` files 🔒
+
+- Auto-generated file by either `yarn` or `npm` that locks the version of all the packages inside of our application, within a specific range, based on the rules that we set inside of `package.json`.
