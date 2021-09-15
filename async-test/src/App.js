@@ -10,7 +10,9 @@ class App extends React.Component {
     };
   }
   handleClick = () => {
-    this.setState({ numberNo: this.state.numberNo + 1 });
+    this.setState({ numberNo: this.state.numberNo + 1 }, () =>
+      console.log(this.state.numberNo)
+    );
   };
   render() {
     return (

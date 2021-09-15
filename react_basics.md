@@ -211,3 +211,8 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
 
 - Auto-generated file by either `yarn` or `npm` that locks the version of all the packages inside of our application, within a specific range, based on the rules that we set inside of `package.json`.
 - They ensure everybody is using a consistent version of these dependencies.
+
+### Asynchronous `.setState()` ⏲️
+
+- There're might be a lot of `.setState()`s in one App. This might cause potential problems with performance.
+- React butches them all and executes them together.
