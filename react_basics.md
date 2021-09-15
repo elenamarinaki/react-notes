@@ -210,3 +210,4 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
 ### `yarn.lock` or `npm.lock` files 🔒
 
 - Auto-generated file by either `yarn` or `npm` that locks the version of all the packages inside of our application, within a specific range, based on the rules that we set inside of `package.json`.
+- They ensure everybody is using a consistent version of these dependencies.
