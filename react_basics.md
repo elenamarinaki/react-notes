@@ -216,3 +216,14 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
 
 - There're might be a lot of `.setState()`s in one App. This might cause potential problems with performance.
 - React butches them all and executes them together.
+- ⚠️ General rule => if we're using `this.state` in `.setState()`, we do it like this:
+  ```jsx
+  this.setState(
+    (prevState, prevProps) => {
+      return { numberNo: prevState.numberNo + 1 };
+    },
+    () => {
+      console.log(this.state.numberNo);
+    }
+  );
+  ```
