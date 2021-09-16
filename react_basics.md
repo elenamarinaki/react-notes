@@ -227,3 +227,10 @@ Benefits => more flexibility, re-usable components, easier testing! ✨
     }
   );
   ```
+- Side note: we can _avoid_ using the `constructor`, if we have **no props**. Instead, we can do this =>
+  ```jsx
+  state = {
+    numberNo = 49
+  }
+  ```
+  This is interpreted by _Babel_ and understood as the `this.state` of the `constructor`.

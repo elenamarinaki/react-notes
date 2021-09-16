@@ -3,11 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
+      // numberNo: 49 + this.props.increment,
       numberNo: 49,
     };
+    this.props = props;
   }
   handleClick = () => {
     // this.setState({ numberNo: this.state.numberNo + 1 }, () =>
@@ -15,7 +17,7 @@ class App extends React.Component {
     // );
     this.setState(
       (prevState, prevProps) => {
-        return { numberNo: prevState.numberNo + 1 };
+        return { numberNo: prevState.numberNo + prevProps.increment };
       },
       () => {
         console.log(this.state.numberNo);
